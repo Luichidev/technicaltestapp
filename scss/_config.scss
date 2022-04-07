@@ -1,6 +1,9 @@
 $primary-color: #19B5BC;
-$text-color: #48545C;
 $background-color: #f7f7f7;
+$text-color: #48545C;
+$text-secondary-color: #383B41;
+$text-tertiary-color: #727D85;
+$input-size-mobile: 100%;
 
 * {
   box-sizing: border-box;
@@ -35,7 +38,7 @@ $background-color: #f7f7f7;
   & p {
     font-size: 12px;
     line-height: 1;
-    color: #727D85;
+    color: $text-tertiary-color;
   }
 }
 @mixin style-info-h2 {
@@ -47,10 +50,67 @@ $background-color: #f7f7f7;
     color: $text-color;
   }
 }
+@mixin inputs($width){
+  width: $width;
+  border-radius: 0.25rem;
+  padding: 9px 13px;
+  font-size: 14px;
+  font-family: Roboto,
+  -apple-system,
+  Oxygen,
+  Ubuntu,
+  Cantarell,
+  'Open Sans',
+  'Helvetica Neue',
+  sans-serif;
+  color: $text-tertiary-color;
+  margin-bottom: 16px;
+}
+@mixin text-notify {
+  width: 100%;
+  text-align: right;
+  color: #999999;
+  font-size: 10px;
+  margin-bottom: 15px;
+  
+  &.success {
+    color: $primary-color;
+  
+    &:before {
+      content: '✔';
+      margin-right: 5px;
+      width: 8px;
+      height: 8px;
+      padding: 2px;
+      display: inline-block;
+      border-radius: 50%;
+      border: 1px solid $primary-color;
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+  
+  &.error {
+    color: red;
+  
+    &:before {
+      content: '✖';
+      margin-right: 5px;
+      width: 8px;
+      height: 8px;
+      padding: 2px;
+      display: inline-block;
+      border-radius: 50%;
+      border: 1px solid red;
+      background-color: red;
+      color: #fff;
+    }
+  }
+}
 
 @function set-text-color($color) {
   @if (lightness($color) > 40%) {
-    @return #48545C;
+    @return $text-color;
   } @else {
     @return #fff;
   }

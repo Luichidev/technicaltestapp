@@ -2,6 +2,9 @@
   @include avatar-flex-box;
   &-image {
     @include avatar-img;
+    & img {
+      border-radius: 50%;
+    }
   }
   &-info {
     @include style-info-p;

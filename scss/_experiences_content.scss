@@ -1,7 +1,7 @@
 .experiences__content{
   &-title {
     font-size: 20px;
-    color: #383B41;
+    color: $text-secondary-color;
     @include font-weight(500);
     padding-bottom: 16px;
   }
@@ -32,8 +32,8 @@
       color: $text-color;
       & span {
         border-radius: 50%;
-        border: 2px solid #727D85;
-        color: #727D85;
+        border: 2px solid $text-tertiary-color;
+        color: $text-tertiary-color;
         text-align: center;
         display: inline-block;
         width: 20px;
@@ -57,7 +57,7 @@
   &-info{
     & h2 {
       font-size: 16px;
-      color: #383B41;
+      color: $text-secondary-color;
       @include font-weight(500);
       margin-bottom: 16px;
     }
@@ -103,7 +103,7 @@
       @include font-weight(500);
       margin-bottom: 16px;
     }
-    &-input {
+    &-content {
       & label {
         font-size: 14px;
         color: #333333;
@@ -113,13 +113,58 @@
         margin-bottom: 8px;
       }
       & select {
-        width: 100%;
-        border-radius: 0.25rem;
-        padding: 9px 13px;
-        font-size: 14px;
-        font-family: Roboto, -apple-system, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        color: #727D85;
+        @include inputs($input-size-mobile);
       }
+      &-button {
+        border-radius: 50%;
+        border: none;
+        height: 41px;
+        margin-right: 7px;
+        padding: 14px; 
+        width: 41px;
+        margin-bottom: 35px;
+  
+        &.active {
+          background-color: $primary-color;
+          color: #fff;
+        }
+      }
+      &-yes{
+        &-box{
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+          & input {
+            @include inputs($input-size-mobile);
+            margin-bottom: 3px;
+            border: 2px solid #E1E8EB;
+          }
+          &-notify {
+            @include text-notify;
+          }
+        }
+        &-comment{
+          display: flex;
+          flex-direction: column;
+          & textArea {
+            @include inputs($input-size-mobile);
+            margin-bottom: 3px;
+            border: 2px solid #E1E8EB;
+            resize: none;
+            height: 160px;
+          }
+          
+          &-notify {
+            @include text-notify;
+          }
+        }
+      }
+    }
+    &-submit {
+      @include style-button;
+      width: 323px;
+      text-transform: uppercase;
+      padding: 15px 75px;
     }
   }
 }

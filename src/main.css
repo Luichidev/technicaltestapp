@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -20,6 +21,10 @@
 .experiences__user-image {
   width: 37px;
   height: 37px;
+}
+
+.experiences__user-image img {
+  border-radius: 50%;
 }
 
 .experiences__user-info p {
@@ -190,7 +195,7 @@
   margin-bottom: 16px;
 }
 
-.experiences__content-form-input label {
+.experiences__content-form-content label {
   font-size: 14px;
   color: #333333;
   font-weight: 500;
@@ -199,13 +204,253 @@
   margin-bottom: 8px;
 }
 
-.experiences__content-form-input select {
+.experiences__content-form-content select {
   width: 100%;
   border-radius: 0.25rem;
   padding: 9px 13px;
   font-size: 14px;
-  font-family: Roboto, -apple-system, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Roboto, -apple-system, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #727D85;
+  margin-bottom: 16px;
+}
+
+.experiences__content-form-content-button {
+  border-radius: 50%;
+  border: none;
+  height: 41px;
+  margin-right: 7px;
+  padding: 14px;
+  width: 41px;
+  margin-bottom: 35px;
+}
+
+.experiences__content-form-content-button.active {
+  background-color: #19B5BC;
+  color: #fff;
+}
+
+.experiences__content-form-content-yes-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+}
+
+.experiences__content-form-content-yes-box input {
+  width: 100%;
+  border-radius: 0.25rem;
+  padding: 9px 13px;
+  font-size: 14px;
+  font-family: Roboto, -apple-system, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #727D85;
+  margin-bottom: 16px;
+  margin-bottom: 3px;
+  border: 2px solid #E1E8EB;
+}
+
+.experiences__content-form-content-yes-box-notify {
+  width: 100%;
+  text-align: right;
+  color: #999999;
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+
+.experiences__content-form-content-yes-box-notify.success {
+  color: #19B5BC;
+}
+
+.experiences__content-form-content-yes-box-notify.success:before {
+  content: '✔';
+  margin-right: 5px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #19B5BC;
+  background-color: #19B5BC;
+  color: #fff;
+}
+
+.experiences__content-form-content-yes-box-notify.error {
+  color: red;
+}
+
+.experiences__content-form-content-yes-box-notify.error:before {
+  content: '✖';
+  margin-right: 5px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid red;
+  background-color: red;
+  color: #fff;
+}
+
+.experiences__content-form-content-yes-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.experiences__content-form-content-yes-comment textArea {
+  width: 100%;
+  border-radius: 0.25rem;
+  padding: 9px 13px;
+  font-size: 14px;
+  font-family: Roboto, -apple-system, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #727D85;
+  margin-bottom: 16px;
+  margin-bottom: 3px;
+  border: 2px solid #E1E8EB;
+  resize: none;
+  height: 160px;
+}
+
+.experiences__content-form-content-yes-comment-notify {
+  width: 100%;
+  text-align: right;
+  color: #999999;
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+
+.experiences__content-form-content-yes-comment-notify.success {
+  color: #19B5BC;
+}
+
+.experiences__content-form-content-yes-comment-notify.success:before {
+  content: '✔';
+  margin-right: 5px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #19B5BC;
+  background-color: #19B5BC;
+  color: #fff;
+}
+
+.experiences__content-form-content-yes-comment-notify.error {
+  color: red;
+}
+
+.experiences__content-form-content-yes-comment-notify.error:before {
+  content: '✖';
+  margin-right: 5px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid red;
+  background-color: red;
+  color: #fff;
+}
+
+.experiences__content-form-submit {
+  background-color: #19B5BC;
+  padding: 8px 16px;
+  border-radius: 1rem;
+  font-weight: 700;
+  color: #fff;
+  font-size: 12px;
+  border: none;
+  margin-bottom: 16px;
+  width: 323px;
+  text-transform: uppercase;
+  padding: 15px 75px;
+}
+
+.more__experiences__head {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.more__experiences__head-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #383B41;
+}
+
+.more__experiences__head-seemore {
+  font-size: 12px;
+  color: #727D85;
+}
+
+.more__experiences__user-head {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.more__experiences__user-head-image {
+  width: 37px;
+  height: 37px;
+}
+
+.more__experiences__user-head-image img {
+  border-radius: 50%;
+}
+
+.more__experiences__user-head-info p {
+  font-size: 12px;
+  line-height: 1;
+  color: #727D85;
+}
+
+.more__experiences__user-head-info h2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 4px;
+  color: #48545C;
+}
+
+.more__experiences__user-footer {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.more__experiences__user-footer p {
+  font-size: 12px;
+  color: #E78D45;
 }
 
 body {
@@ -229,5 +474,16 @@ section {
   min-width: 375px;
   margin: 0 auto;
   padding: 16px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
 }
 /*# sourceMappingURL=main.css.map */

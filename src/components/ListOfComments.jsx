@@ -6,7 +6,7 @@ export default function ListOfComments() {
   const [experiences, setExperiences] = useState([])
 
   useEffect(function () {
-    getUserCommnets().then((comment) => setExperiences(comment))
+    getUserCommnets().then((comment) => setExperiences(comment || []))
   }, [])
 
   return experiences.map(

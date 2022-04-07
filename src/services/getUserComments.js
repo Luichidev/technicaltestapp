@@ -19,4 +19,7 @@ export default function getUserCommnets() {
         return comments
       }
     })
+    .catch((error) => {
+      console.log(`Error: No comments found ${error}`)
+    })
 }

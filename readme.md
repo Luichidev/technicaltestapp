@@ -44,13 +44,20 @@ o
 Una vez instaladas las dependencias, escribe el siguiente comando en tu terminal (Asegurate que estas dentro del proyecto).
 
 ```bash
-   npm run dev
-
-   o
-
-   npm run bluid  //para generar los archivos estáticos
+   npm run server
 ```
 
+Una vez iniciado el server ya se podra acceder a la API, luego abre una nueva terminal y escribe el siguiente comando:
+
+```bash
+   npm run dev
+```
+   
+Si quieres generar los archivos estaticos, escribe en tu terminal el siguiente comando:
+
+```bash
+   npm run bluid  //para generar los archivos estáticos
+```
 ### Tecnologias 🖥️
 
 - HTML5

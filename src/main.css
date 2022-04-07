@@ -1,4 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@font-face {
+  font-family: 'Roboto';
+  font-display: auto;
+  src: url('/assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-display: auto;
+  src: url('/assets/fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-display: auto;
+  src: url('/assets/fonts/Roboto/Roboto-Bold.ttf');
+}
 
 * {
   -webkit-box-sizing: border-box;

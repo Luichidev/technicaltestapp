@@ -7,8 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "server": "node ./yns/app.js"
   },
   "dependencies": {
     "react": "17.0.2",

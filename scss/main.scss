@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import 'config';
+@import 'experiences_user';
+@import 'experiences_content';
+
+body{
+  background-color: $background-color;
+  color: set-text-color($primary-color);
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  line-height: 1;
+  
+}
+
+h1, h2, h3 {
+  font-weight: font-weight(500);
+}
+
+a {
+  color: set-text-color($primary-color);
+  text-decoration: none;
+}
+
+section {
+  max-width: 1600px;
+  min-width: 375px;
+  margin: 0 auto;
+  padding: 16px;
+}

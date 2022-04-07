@@ -1,0 +1,125 @@
+.experiences__content{
+  &-title {
+    font-size: 20px;
+    color: #383B41;
+    @include font-weight(500);
+    padding-bottom: 16px;
+  }
+
+  &-description {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 16px;
+    &-like {
+      font-size: 12px;
+      line-height: 1;
+      color: $text-color;
+      & span {
+        background-color: $primary-color;
+        display: inline-block;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+        margin-right: 4px;
+      }
+    }
+    &-price {
+      font-size: 12px;
+      line-height: 1;
+      color: $text-color;
+      & span {
+        border-radius: 50%;
+        border: 2px solid #727D85;
+        color: #727D85;
+        text-align: center;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+      }
+    }
+  }
+
+  &-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+    &-img img{
+      border-radius: 0.35rem;
+      width: 100%;
+    }
+  }
+
+  &-info{
+    & h2 {
+      font-size: 16px;
+      color: #383B41;
+      @include font-weight(500);
+      margin-bottom: 16px;
+    }
+    &-doctor{
+      @include avatar-flex-box;
+      &-image img {
+        border-radius: 0.35rem;
+      }
+      &-text{
+        @include style-info-p;
+        @include style-info-h2;
+      }
+    }
+    &-button {
+      @include style-button;
+    }
+  }
+
+  &-ratings {
+    margin-bottom: 47px;
+    &-content {
+      @include avatar-flex-box;
+      @include style-info-h2;
+      & h2 {
+        margin: 2px 0 0 0;
+      }
+      & p {
+        color: #FFBB4B;
+      }
+    }
+    &-text{
+      & p {
+        font-size: 14px;
+        line-height: 21px;
+        color: $text-color;
+      }
+    }
+  }
+
+  &-form {
+    & h2 {
+      font-size: 20px;
+      @include font-weight(500);
+      margin-bottom: 16px;
+    }
+    &-input {
+      & label {
+        font-size: 14px;
+        color: #333333;
+        @include font-weight(500);
+        margin-bottom: 4px;
+        display: block;
+        margin-bottom: 8px;
+      }
+      & select {
+        width: 100%;
+        border-radius: 0.25rem;
+        padding: 9px 13px;
+        font-size: 14px;
+        font-family: Roboto, -apple-system, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #727D85;
+      }
+    }
+  }
+}

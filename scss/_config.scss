@@ -1,0 +1,79 @@
+$primary-color: #19B5BC;
+$text-color: #48545C;
+$background-color: #f7f7f7;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+@mixin avatar-flex-box{
+  margin-bottom: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+@mixin avatar-img {
+  width: 37px;
+  height: 37px;
+}
+@mixin style-button{
+  background-color: $primary-color;
+  padding: 8px 16px;
+  border-radius: 1rem;
+  font-weight: 700;
+  color: #fff;
+  font-size: 12px;
+  border: none;
+  margin-bottom: 16px;
+}
+@mixin style-info-p {
+  & p {
+    font-size: 12px;
+    line-height: 1;
+    color: #727D85;
+  }
+}
+@mixin style-info-h2 {
+  & h2 {
+    font-size: 14px;
+    @include font-weight(500);
+    line-height: 1;
+    margin-bottom: 4px;
+    color: $text-color;
+  }
+}
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40%) {
+    @return #48545C;
+  } @else {
+    @return #fff;
+  }
+}
+
+@mixin font-weight($weight) {
+  font-weight: $weight;
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}

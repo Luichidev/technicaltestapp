@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.experiences__user {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.experiences__user-image {
+  width: 37px;
+  height: 37px;
+}
+
+.experiences__user-info p {
+  font-size: 12px;
+  line-height: 1;
+  color: #727D85;
+}
+
+.experiences__user-info h2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 4px;
+  color: #48545C;
+}
+
+.experiences__content-title {
+  font-size: 20px;
+  color: #383B41;
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+
+.experiences__content-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+
+.experiences__content-description-like {
+  font-size: 12px;
+  line-height: 1;
+  color: #48545C;
+}
+
+.experiences__content-description-like span {
+  background-color: #19B5BC;
+  display: inline-block;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  margin-right: 4px;
+}
+
+.experiences__content-description-price {
+  font-size: 12px;
+  line-height: 1;
+  color: #48545C;
+}
+
+.experiences__content-description-price span {
+  border-radius: 50%;
+  border: 2px solid #727D85;
+  color: #727D85;
+  text-align: center;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+}
+
+.experiences__content-images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.experiences__content-images-img img {
+  border-radius: 0.35rem;
+  width: 100%;
+}
+
+.experiences__content-info h2 {
+  font-size: 16px;
+  color: #383B41;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.experiences__content-info-doctor {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.experiences__content-info-doctor-image img {
+  border-radius: 0.35rem;
+}
+
+.experiences__content-info-doctor-text p {
+  font-size: 12px;
+  line-height: 1;
+  color: #727D85;
+}
+
+.experiences__content-info-doctor-text h2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 4px;
+  color: #48545C;
+}
+
+.experiences__content-info-button {
+  background-color: #19B5BC;
+  padding: 8px 16px;
+  border-radius: 1rem;
+  font-weight: 700;
+  color: #fff;
+  font-size: 12px;
+  border: none;
+  margin-bottom: 16px;
+}
+
+.experiences__content-ratings {
+  margin-bottom: 47px;
+}
+
+.experiences__content-ratings-content {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.experiences__content-ratings-content h2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 4px;
+  color: #48545C;
+}
+
+.experiences__content-ratings-content h2 {
+  margin: 2px 0 0 0;
+}
+
+.experiences__content-ratings-content p {
+  color: #FFBB4B;
+}
+
+.experiences__content-ratings-text p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #48545C;
+}
+
+.experiences__content-form h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.experiences__content-form-input label {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 500;
+  margin-bottom: 4px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.experiences__content-form-input select {
+  width: 100%;
+  border-radius: 0.25rem;
+  padding: 9px 13px;
+  font-size: 14px;
+  font-family: Roboto, -apple-system, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #727D85;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #48545C;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  line-height: 1;
+}
+
+h1, h2, h3 {
+  font-weight: font-weight(500);
+}
+
+a {
+  color: #48545C;
+  text-decoration: none;
+}
+
+section {
+  max-width: 1600px;
+  min-width: 375px;
+  margin: 0 auto;
+  padding: 16px;
+}
+/*# sourceMappingURL=main.css.map */

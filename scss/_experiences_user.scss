@@ -1,0 +1,10 @@
+.experiences__user{
+  @include avatar-flex-box;
+  &-image {
+    @include avatar-img;
+  }
+  &-info {
+    @include style-info-p;
+    @include style-info-h2;
+  }
+}

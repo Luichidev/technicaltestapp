@@ -1,0 +1,51 @@
+@include media-md {
+  .more__experiences__user-head-info{
+    flex: 10;
+  }
+}
+
+@include media-lg {
+  .main {
+    flex-direction: row !important;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .experiences {
+    margin-top: 107px;
+    border-radius: 0.25rem;
+    &__content {
+      &-title {
+        & h1 {
+          font-size: 28px;
+        }
+      }
+      &-images {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      &-info {
+        & h2 {
+          font-size: 18px;
+        }
+      }
+      &-form{
+        &-submit {
+          width: 232px;
+          padding: 12px;
+        }
+      }
+    }
+  }
+  
+  .more__experiences{
+    flex: 1;
+    margin-top: 107px;
+    &__user{
+      &-head{
+        &-info{
+          flex: 5;
+        }
+      }
+    }
+  }
+
+}

@@ -15,17 +15,25 @@
     }
   }
   &__user {
+    border: 1px solid #eeeeee;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 0.25rem;
+    background-color: #fff;
     &-head {
       @include avatar-flex-box;
-      gap: 30px;
+      gap: 10px;
   
       &-image {
         @include avatar-img;
+        flex: 1;
         & img {
           border-radius: 50%;
+          width: 100%;
         }
       }
       &-info {
+        flex: 5;
         @include style-info-p;
         @include style-info-h2;
       }
@@ -33,6 +41,7 @@
     &-footer {
       @include avatar-flex-box;
       justify-content: space-between;
+      margin-bottom: 0;
     
       & p {
         font-size: 12px;

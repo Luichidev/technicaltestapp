@@ -8,19 +8,19 @@
 }
 
 .experiences__user {
-  margin-bottom: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-bottom: 16px;
 }
 
 .experiences__user-image {
-  width: 37px;
-  height: 37px;
+  width: 50px;
+  height: 50px;
 }
 
 .experiences__user-image img {
@@ -28,17 +28,17 @@
 }
 
 .experiences__user-info p {
+  color: #727D85;
   font-size: 12px;
   line-height: 1;
-  color: #727D85;
 }
 
 .experiences__user-info h2 {
-  font-size: 14px;
   font-weight: 500;
+  color: #48545C;
+  font-size: 14px;
   line-height: 1;
   margin-bottom: 4px;
-  color: #48545C;
 }
 
 .experiences__content-title {
@@ -113,14 +113,14 @@
 }
 
 .experiences__content-info-doctor {
-  margin-bottom: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-bottom: 16px;
 }
 
 .experiences__content-info-doctor-image img {
@@ -128,28 +128,28 @@
 }
 
 .experiences__content-info-doctor-text p {
+  color: #727D85;
   font-size: 12px;
   line-height: 1;
-  color: #727D85;
 }
 
 .experiences__content-info-doctor-text h2 {
-  font-size: 14px;
   font-weight: 500;
+  color: #48545C;
+  font-size: 14px;
   line-height: 1;
   margin-bottom: 4px;
-  color: #48545C;
 }
 
 .experiences__content-info-button {
   background-color: #19B5BC;
-  padding: 8px 16px;
   border-radius: 1rem;
-  font-weight: 700;
+  border: none;
   color: #fff;
   font-size: 12px;
-  border: none;
+  font-weight: 700;
   margin-bottom: 16px;
+  padding: 8px 16px;
 }
 
 .experiences__content-ratings {
@@ -157,22 +157,22 @@
 }
 
 .experiences__content-ratings-content {
-  margin-bottom: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-bottom: 16px;
 }
 
 .experiences__content-ratings-content h2 {
-  font-size: 14px;
   font-weight: 500;
+  color: #48545C;
+  font-size: 14px;
   line-height: 1;
   margin-bottom: 4px;
-  color: #48545C;
 }
 
 .experiences__content-ratings-content h2 {
@@ -205,13 +205,13 @@
 }
 
 .experiences__content-form-content select {
-  width: 100%;
   border-radius: 0.25rem;
-  padding: 9px 13px;
-  font-size: 14px;
-  font-family: Roboto, -apple-system, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #727D85;
+  font-family: Roboto, -apple-system, Oxygen;
+  font-size: 14px;
   margin-bottom: 16px;
+  padding: 9px 13px;
+  width: 100%;
 }
 
 .experiences__content-form-content-button {
@@ -241,23 +241,23 @@
 }
 
 .experiences__content-form-content-yes-box input {
-  width: 100%;
   border-radius: 0.25rem;
-  padding: 9px 13px;
-  font-size: 14px;
-  font-family: Roboto, -apple-system, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #727D85;
+  font-family: Roboto, -apple-system, Oxygen;
+  font-size: 14px;
   margin-bottom: 16px;
+  padding: 9px 13px;
+  width: 100%;
   margin-bottom: 3px;
   border: 2px solid #E1E8EB;
 }
 
 .experiences__content-form-content-yes-box-notify {
-  width: 100%;
-  text-align: right;
   color: #999999;
   font-size: 10px;
   margin-bottom: 15px;
+  text-align: right;
+  width: 100%;
 }
 
 .experiences__content-form-content-yes-box-notify.success {
@@ -266,15 +266,15 @@
 
 .experiences__content-form-content-yes-box-notify.success:before {
   content: '✔';
-  margin-right: 5px;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
-  display: inline-block;
+  background-color: #19B5BC;
   border-radius: 50%;
   border: 1px solid #19B5BC;
-  background-color: #19B5BC;
   color: #fff;
+  display: inline-block;
+  height: 8px;
+  margin-right: 5px;
+  padding: 2px;
+  width: 8px;
 }
 
 .experiences__content-form-content-yes-box-notify.error {
@@ -283,15 +283,15 @@
 
 .experiences__content-form-content-yes-box-notify.error:before {
   content: '✖';
-  margin-right: 5px;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
-  display: inline-block;
+  background-color: red;
   border-radius: 50%;
   border: 1px solid red;
-  background-color: red;
   color: #fff;
+  display: inline-block;
+  height: 8px;
+  margin-right: 5px;
+  padding: 2px;
+  width: 8px;
 }
 
 .experiences__content-form-content-yes-comment {
@@ -305,13 +305,13 @@
 }
 
 .experiences__content-form-content-yes-comment textArea {
-  width: 100%;
   border-radius: 0.25rem;
-  padding: 9px 13px;
-  font-size: 14px;
-  font-family: Roboto, -apple-system, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #727D85;
+  font-family: Roboto, -apple-system, Oxygen;
+  font-size: 14px;
   margin-bottom: 16px;
+  padding: 9px 13px;
+  width: 100%;
   margin-bottom: 3px;
   border: 2px solid #E1E8EB;
   resize: none;
@@ -319,11 +319,11 @@
 }
 
 .experiences__content-form-content-yes-comment-notify {
-  width: 100%;
-  text-align: right;
   color: #999999;
   font-size: 10px;
   margin-bottom: 15px;
+  text-align: right;
+  width: 100%;
 }
 
 .experiences__content-form-content-yes-comment-notify.success {
@@ -332,15 +332,15 @@
 
 .experiences__content-form-content-yes-comment-notify.success:before {
   content: '✔';
-  margin-right: 5px;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
-  display: inline-block;
+  background-color: #19B5BC;
   border-radius: 50%;
   border: 1px solid #19B5BC;
-  background-color: #19B5BC;
   color: #fff;
+  display: inline-block;
+  height: 8px;
+  margin-right: 5px;
+  padding: 2px;
+  width: 8px;
 }
 
 .experiences__content-form-content-yes-comment-notify.error {
@@ -349,40 +349,45 @@
 
 .experiences__content-form-content-yes-comment-notify.error:before {
   content: '✖';
-  margin-right: 5px;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
-  display: inline-block;
+  background-color: red;
   border-radius: 50%;
   border: 1px solid red;
-  background-color: red;
   color: #fff;
+  display: inline-block;
+  height: 8px;
+  margin-right: 5px;
+  padding: 2px;
+  width: 8px;
 }
 
 .experiences__content-form-submit {
   background-color: #19B5BC;
-  padding: 8px 16px;
   border-radius: 1rem;
-  font-weight: 700;
+  border: none;
   color: #fff;
   font-size: 12px;
-  border: none;
+  font-weight: 700;
   margin-bottom: 16px;
+  padding: 8px 16px;
   width: 323px;
   text-transform: uppercase;
   padding: 15px 75px;
 }
 
+.experiences {
+  background: #fff;
+  padding: 35px;
+}
+
 .more__experiences__head {
-  margin-bottom: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-bottom: 16px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -399,58 +404,125 @@
   color: #727D85;
 }
 
+.more__experiences__user {
+  border: 1px solid #eeeeee;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+
 .more__experiences__user-head {
-  margin-bottom: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 30px;
+  margin-bottom: 16px;
+  gap: 10px;
 }
 
 .more__experiences__user-head-image {
-  width: 37px;
-  height: 37px;
+  width: 50px;
+  height: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .more__experiences__user-head-image img {
   border-radius: 50%;
+  width: 100%;
+}
+
+.more__experiences__user-head-info {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
 }
 
 .more__experiences__user-head-info p {
+  color: #727D85;
   font-size: 12px;
   line-height: 1;
-  color: #727D85;
 }
 
 .more__experiences__user-head-info h2 {
-  font-size: 14px;
   font-weight: 500;
+  color: #48545C;
+  font-size: 14px;
   line-height: 1;
   margin-bottom: 4px;
-  color: #48545C;
 }
 
 .more__experiences__user-footer {
-  margin-bottom: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-bottom: 16px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 0;
 }
 
 .more__experiences__user-footer p {
   font-size: 12px;
   color: #E78D45;
+}
+
+@media screen and (min-width: 768px) {
+  .more__experiences__user-head-info {
+    -webkit-box-flex: 10;
+        -ms-flex: 10;
+            flex: 10;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .experiences {
+    margin-top: 107px;
+    border-radius: 0.25rem;
+  }
+  .experiences__content-title h1 {
+    font-size: 28px;
+  }
+  .experiences__content-images {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .experiences__content-info h2 {
+    font-size: 18px;
+  }
+  .experiences__content-form-submit {
+    width: 232px;
+    padding: 12px;
+  }
+  .more__experiences {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: 107px;
+  }
+  .more__experiences__user-head-info {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+  }
 }
 
 body {
@@ -476,7 +548,7 @@ section {
   padding: 16px;
 }
 
-main {
+.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -15,78 +15,71 @@ $input-size-mobile: 100%;
   transition: all 0.5s ease-in-out;
 }
 @mixin avatar-flex-box{
-  margin-bottom: 16px;
+  align-items: center;
   display: flex;
   gap: 12px;
-  align-items: center;
+  margin-bottom: 16px;
 }
 @mixin avatar-img {
-  width: 37px;
-  height: 37px;
+  width: 50px;
+  height: 50px;
 }
 @mixin style-button{
   background-color: $primary-color;
-  padding: 8px 16px;
   border-radius: 1rem;
-  font-weight: 700;
+  border: none;
   color: #fff;
   font-size: 12px;
-  border: none;
+  font-weight: 700;
   margin-bottom: 16px;
+  padding: 8px 16px;
 }
 @mixin style-info-p {
   & p {
+    color: $text-tertiary-color;
     font-size: 12px;
     line-height: 1;
-    color: $text-tertiary-color;
   }
 }
 @mixin style-info-h2 {
   & h2 {
-    font-size: 14px;
     @include font-weight(500);
+    color: $text-color;
+    font-size: 14px;
     line-height: 1;
     margin-bottom: 4px;
-    color: $text-color;
   }
 }
 @mixin inputs($width){
-  width: $width;
   border-radius: 0.25rem;
-  padding: 9px 13px;
-  font-size: 14px;
-  font-family: Roboto,
-  -apple-system,
-  Oxygen,
-  Ubuntu,
-  Cantarell,
-  'Open Sans',
-  'Helvetica Neue',
-  sans-serif;
   color: $text-tertiary-color;
+  font-family: Roboto, -apple-system, Oxygen;
+  font-size: 14px;
   margin-bottom: 16px;
+  padding: 9px 13px;
+  width: $width;
 }
 @mixin text-notify {
-  width: 100%;
-  text-align: right;
   color: #999999;
   font-size: 10px;
   margin-bottom: 15px;
+  text-align: right;
+  width: 100%;
   
   &.success {
     color: $primary-color;
   
     &:before {
       content: '✔';
-      margin-right: 5px;
-      width: 8px;
-      height: 8px;
-      padding: 2px;
-      display: inline-block;
+      background-color: $primary-color;
       border-radius: 50%;
       border: 1px solid $primary-color;
-      background-color: $primary-color;
       color: #fff;
+      display: inline-block;
+      height: 8px;
+      margin-right: 5px;
+      padding: 2px;
+      width: 8px;
     }
   }
   
@@ -95,15 +88,15 @@ $input-size-mobile: 100%;
   
     &:before {
       content: '✖';
-      margin-right: 5px;
-      width: 8px;
-      height: 8px;
-      padding: 2px;
-      display: inline-block;
+      background-color: red;
       border-radius: 50%;
       border: 1px solid red;
-      background-color: red;
       color: #fff;
+      display: inline-block;
+      height: 8px;
+      margin-right: 5px;
+      padding: 2px;
+      width: 8px;
     }
   }
 }
@@ -128,12 +121,6 @@ $input-size-mobile: 100%;
 
 @mixin media-lg {
   @media screen and (min-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin media-xl {
-  @media screen and (min-width: 1600px) {
     @content;
   }
 }

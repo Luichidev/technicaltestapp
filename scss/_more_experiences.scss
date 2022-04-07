@@ -1,0 +1,43 @@
+.more__experiences {
+  &__head {
+    @include avatar-flex-box;
+    justify-content: space-between;
+    
+    &-title {
+      font-size: 18px;
+      @include font-weight(700);
+      color: $text-secondary-color;
+    }
+    
+    &-seemore {
+      font-size: 12px;
+      color: $text-tertiary-color;
+    }
+  }
+  &__user {
+    &-head {
+      @include avatar-flex-box;
+      gap: 30px;
+  
+      &-image {
+        @include avatar-img;
+        & img {
+          border-radius: 50%;
+        }
+      }
+      &-info {
+        @include style-info-p;
+        @include style-info-h2;
+      }
+    }
+    &-footer {
+      @include avatar-flex-box;
+      justify-content: space-between;
+    
+      & p {
+        font-size: 12px;
+        color: #E78D45;
+      }
+    }
+  }
+}

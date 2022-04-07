@@ -15,33 +15,41 @@ Puedes hacer un clon o un fork del proyecto
 
 1. Descarga este repositorio en modo zip , clonando o haciendo un fork (bifurcación).
 2. Abre tu terminal favorita y dependiendo del tipo de descargar que hiciste sigue los siguientes pasos 
-* Zip. Descomprime el archivo, por tu terminar accede a la capeta descomprimida y escribe el comando: 
-   npm Install
-   --
-   o
-   yarn install
+* Zip.- Descomprime el archivo, por tu terminal accede a la capeta descomprimida y escribe el comando: 
+   
+```bash
+  npm install technicaltestapp
+  cd technicaltestapp
+```
+o
+
+```bash
+  yarm install technicaltestapp
+  cd technicaltestapp
+```
 
 * Clone.- Inicia tu terminal, ponte en la capeta donde guardas tus proyectos, escribe el comando:
-      
+
+```bash
    git clone 'https://github.com/Luichidev/technicaltestapp'
-   --
    cd 'technicaltestapp'
-   npm Install
+   npm Install 
    o
    yarn install
-
+```
 * Fork.- un fork es una bifurcación del proyecto original, es decir, una copia del proyecto pero en tu github personal, para descargar proyecto deberás utilizar Zip o Clone.
    
 ### Empezar el proyecto ✈️
 
 Una vez instaladas las dependencias, escribe el siguiente comando en tu terminal (Asegurate que estas dentro del proyecto).
 
-npm run dev
+```bash
+   npm run dev
 
-o
+   o
 
-npm run bluid  //para generar los archivos estáticos
-
+   npm run bluid  //para generar los archivos estáticos
+```
 
 ### Tecnologias 🖥️
 

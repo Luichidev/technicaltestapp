@@ -57,6 +57,42 @@ export default function Experiences() {
     }
   }
 
+  const resetForm = () => {
+    inputTitle.current.value = ''
+    inputDescription.current.value = ''
+    errorInput.current.classList.remove('success')
+    errorTextArea.current.classList.remove('success')
+    linkYes.current.classList.remove('active')
+    linkNo.current.classList.add('active')
+    setValueDesc(0)
+    setValueTitle(0)
+    setIsYes(false)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    let msg
+    if (isYes) {
+      if (
+        valueTitle > 20 &&
+        valueTitle < 90 &&
+        valueDesc > 300 &&
+        valueDesc < 18000
+      ) {
+        msg = 'Enviado 🚀'
+        resetForm()
+      } else {
+        msg =
+          'Error: \n El titulo debe tener entre 20 y 90 caracteres \n La descripcion entre 300 y 18000'
+      }
+      alert(msg)
+    } else {
+      msg = 'Enviado 🚀'
+      alert(msg)
+      resetForm()
+    }
+  }
+
   return (
     <section className='experiences'>
       <UserBox
@@ -119,27 +155,29 @@ export default function Experiences() {
         </div>
         <div className='experiences__content-form'>
           <h2>Cuentanos tu experriencia</h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className='experiences__content-form-content'>
               <label htmlFor='name'>¿Qué tratamiento te has realizado?</label>
               <select name='experience' id='experience'>
                 <option value='AS'>Aumento de senos</option>
               </select>
               <label htmlFor='name'>¿Recomendarias el tratamiento?</label>
-              <button
-                ref={linkYes}
-                onClick={handleClick}
-                className='experiences__content-form-content-button'
-              >
-                Si
-              </button>
-              <button
-                ref={linkNo}
-                onClick={handleClick}
-                className='experiences__content-form-content-button active'
-              >
-                No
-              </button>
+              <div>
+                <button
+                  ref={linkYes}
+                  onClick={handleClick}
+                  className='experiences__content-form-content-button'
+                >
+                  Si
+                </button>
+                <button
+                  ref={linkNo}
+                  onClick={handleClick}
+                  className='experiences__content-form-content-button active'
+                >
+                  No
+                </button>
+              </div>
               {isYes && (
                 <div className='experiences__content-form-content-yes'>
                   <h2>Cuentanos tu experriencia</h2>
@@ -149,6 +187,7 @@ export default function Experiences() {
                       ref={inputTitle}
                       onChange={handleWriting}
                       placeholder='Título resumen de tu experiencia'
+                      required
                     />
                     <p
                       ref={errorInput}
@@ -163,6 +202,7 @@ export default function Experiences() {
                       onChange={handleWriting}
                       name='experience'
                       id='experience'
+                      required
                     ></textarea>
                     <p
                       ref={errorTextArea}

@@ -89,7 +89,6 @@ export default function Experiences() {
     } else {
       msg = 'Enviado 🚀'
       alert(msg)
-      resetForm()
     }
   }
 
